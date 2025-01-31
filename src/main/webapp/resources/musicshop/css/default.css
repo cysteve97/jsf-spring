@@ -31,7 +31,7 @@ a:hover, a:active {
 body > header {
     padding: 1em;
     clear: both;
-    background-color: #f15b2a;
+    background-color: #000000;
     color: white;
     text-align: center;
 }
@@ -75,4 +75,70 @@ body > footer > p {
 .product-details > img {
     float: left;
     padding-right: 1em;
+}
+
+.right-align {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-top {
+    display: flex;
+    justify-content: space-between; /* Links, Mitte, Rechts */
+    align-items: center;            /* Vertikal ausgerichtet */
+    padding: 0 10px;                /* Abstand innen */
+}
+
+.panel-top h1 {
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;                   /* Erzwingt zentrierte Überschrift */
+}
+
+.small-back-button {
+    padding: 5px 10px;              /* Kleinere Größe */
+    font-size: 14px;                /* Kleinere Schriftgröße */
+    display: flex;                  /* Flexbox für Icon und Text */
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.right-menu-button {
+    margin: 10px 0;             /* Abstand rechts */
+}
+
+.tickets-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tickets-table .ui-datatable-header {
+    font-weight: bold;
+    text-align: left;
+}
+
+.view-details-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007ad9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-details-button:hover {
+    background-color: #005a9e;
+}
+
+.tickets-table .ui-column-filter {
+    padding: 5px;
+    font-size: 14px;
 }
